@@ -1,3 +1,10 @@
 #!/bin/bash
 
-python3 $PYFILE
+fp="/alx-higher_level_programming/0x00-python-hello_world/main.py"
+export PYFILE=$(basename "$fp")
+
+if [ -f "$fp" ]; then
+        python3 "$PYFILE"
+else
+        echo "File does not exist: $fp"
+fi
