@@ -1,9 +1,10 @@
 #!/bin/bash
 
-file_path="/alx-higher_level_programming/0x00-python-hello_world/main.py"
+fp="/alx-higher_level_programming/0x00-python-hello_world/main.py"
+export PYFILE=$(basename "$fp")
 
-if [ -f "$file_path" ]; then
-	"$file_path"
+if [ -f "$fp" ]; then
+	"$fp"
 else
-	echo "File does not exist: $file_path"
+	echo "File does not exist: $fp"
 fi
