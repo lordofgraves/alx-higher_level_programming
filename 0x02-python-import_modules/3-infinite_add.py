@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     from sys import argv
-    total = 0
-    for arg in argv[1:]:
-        total += len(arg)
-    print("{:d}".format(total))
+    _len = len(argv)
+    if _len == 1:
+        print(0)
+    elif _len > 1:
+        total = 0
+        for a in range(1, _len):
+            total = total + int(argv[a])
+        print("{:d}".format(total))
