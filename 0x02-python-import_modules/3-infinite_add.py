@@ -5,7 +5,7 @@ if __name__ == "__main__":
     if arg_len == 1:
         print(0)
     elif arg_len > 1:
-        res = 0
-        for x in range(1, arg_len):
-            res = res + int(argv[x])
-        print("{:d}".format(res))
+        total = 0
+        for a in range(1, arg_len):
+            total = total + int(argv[a])
+        print("{:d}".format(total))
