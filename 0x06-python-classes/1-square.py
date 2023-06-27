@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """defines a class called square"""
+
+
 class Square:
     """ this class defines properties
     of a quare based on 0-square.py
