@@ -111,7 +111,7 @@ class Rectangle:
 
         for i in range(self.__height):
             for j in range(self.__width):
-                rec.append("#")
+                rec.append(str(self.print_symbol))
                 if j < self.__width - 1:
                     rec.append("")
                     
